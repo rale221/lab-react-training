@@ -19,7 +19,7 @@ const IdCard = (props) => {
                 Height: {props.height}
             </div>
             <div>
-                Birthday: {moment(props.birth).format('LLLL')}
+                {/* Birthday: {moment(props.birth).format('LLLL')} */}
             </div>
 
         </div>
