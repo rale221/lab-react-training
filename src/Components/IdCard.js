@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { isValidElement } from 'react';
 
 const IdCard = (props) => {
     return (
@@ -7,21 +7,22 @@ const IdCard = (props) => {
                 <img src={props.picture} alt=""></img>
             </div>
             <div>
-                Fist Name: {props.firstName}
+                <p>
+                    Fist Name: {props.firstName}
+                </p>
+                <p>
+                    Last name: {props.lastName}
+                </p>
+                <p>
+                    Gender: {props.gender}
+                </p>
+                <p>
+                    Height: {props.height}
+                </p>
+                <p>
+                    Birth: {props.birth.toDateString()}
+                </p>
             </div>
-            <div>
-                Last name: {props.lastName}
-            </div>
-            <div>
-                Gender: {props.gender}
-            </div>
-            <div>
-                Height: {props.height}
-            </div>
-            <div>
-                {/* Birthday: {moment(props.birth).format('LLLL')} */}
-            </div>
-
         </div>
     );
 };
